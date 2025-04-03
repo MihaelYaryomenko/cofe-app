@@ -1,0 +1,14 @@
+#category-container {
+    overflow-y: scroll;
+    margin-left: 28px;
+    width: 372px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+#category-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}

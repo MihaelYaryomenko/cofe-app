@@ -1,0 +1,28 @@
+#search-container {
+    width: 372px;
+    border-radius: 10px;
+    height: 59px;
+    background-color: #ffffff;
+    color: #a5a5a5;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0px 0px 18px 28px;
+    padding-left: 20px;
+}
+
+input {
+    font-size: 16px;
+    line-height: 100%;
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    outline: none;
+    margin-left: 7px;
+}

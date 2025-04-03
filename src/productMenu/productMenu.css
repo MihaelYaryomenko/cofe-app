@@ -1,0 +1,7 @@
+#product-container {
+    overflow: hidden;
+    margin-top: 28px;
+    width: 372px;
+    height: 100vh - 321px;
+    margin-left: 28px;
+}
