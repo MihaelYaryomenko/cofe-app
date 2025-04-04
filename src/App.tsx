@@ -4,15 +4,18 @@ import Search from "./search/search"
 import Category from "./category/category"
 import ProductMenu from "./productMenu/productMenu"
 import "./App.css"
+import { useState } from "react"
 
 function App() {
+    const [value, setValue] = useState("")
+
     return (
         <>
             <Header />
             <Menu />
-            <Search />
+            <Search value={value} setValue={setValue} />
             <Category />
-            <ProductMenu />
+            <ProductMenu value={value} />
         </>
     )
 }

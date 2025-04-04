@@ -1,17 +1,34 @@
 import "./productMenu.css"
 import PMElement from "./PMElement/PMElement"
 
-function productMenu() {
+const arrOfNames = [
+    "Латте",
+    "Мокко",
+    "Топиако",
+    "Кофе",
+    "Топиако",
+    "Экспрессо",
+    "Мокко",
+]
+
+interface ProductMenuProps {
+    value?: string
+}
+
+arrOfNames.sort()
+
+function productMenu({ value }: ProductMenuProps) {
+    const filteredProducts = value
+        ? arrOfNames.filter((name) =>
+              name.toLowerCase().includes(value.toLowerCase())
+          )
+        : arrOfNames
+
     return (
         <div id="product-container">
-            <PMElement name={"Латте"} />
-            <PMElement name={"Мокко"} />
-            <PMElement name={"Топиако"} />
-            <PMElement name={"Кофе"} />
-            <PMElement name={"Топиако"} />
-            <PMElement name={"Кофе"} />
-            <PMElement name={"Топиако"} />
-            <PMElement name={"Кофе"} />
+            {filteredProducts.map((element, index) => (
+                <PMElement key={`${element}-${index}`} name={element} />
+            ))}
         </div>
     )
 }
