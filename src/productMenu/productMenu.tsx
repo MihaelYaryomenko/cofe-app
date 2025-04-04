@@ -15,19 +15,18 @@ interface ProductMenuProps {
     value?: string
 }
 
-arrOfNames.sort()
-
 function productMenu({ value }: ProductMenuProps) {
-    const filteredProducts = value
-        ? arrOfNames.filter((name) =>
-              name.toLowerCase().includes(value.toLowerCase())
-          )
-        : arrOfNames
+    if (value == undefined) {
+        throw new Error("Value in productMenu.tsx line 18 is undefined")
+    }
+    const filteredProducts = arrOfNames.filter((name) =>
+        name.toLowerCase().includes(value.toLowerCase())
+    )
 
     return (
         <div id="product-container">
             {filteredProducts.map((element, index) => (
-                <PMElement key={`${element}-${index}`} name={element} />
+                <PMElement key={index} name={element} />
             ))}
         </div>
     )
