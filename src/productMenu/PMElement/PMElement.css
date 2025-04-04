@@ -2,13 +2,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow-x: auto;
     background-color: white;
     border-radius: 16px;
     height: 214px;
     width: 176px;
-    flex-shrink: 0; /* Prevents items from shrinking */
-    margin-top: 30px;
 }
 
 #pr-container {
@@ -27,8 +24,9 @@
     width: 160px;
 }
 
-p {
-    margin: 0px;
+.special-p {
+    position: absolute;
+    bottom: 8px;
     font-family: "Inder", sans-serif;
     font-weight: 400;
     font-style: normal;

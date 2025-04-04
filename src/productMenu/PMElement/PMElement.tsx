@@ -10,7 +10,7 @@ function PMElement({ name }: CategoryElementProps) {
         <div className="PMElement-container">
             <div id="pr-container"></div>
             <div id="name-count-container">
-                <p>{name}</p>
+                <p className="special-p">{name}</p>
                 <div id="plus-icon">
                     <IconPlus />
                 </div>

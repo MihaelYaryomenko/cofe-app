@@ -1,7 +1,19 @@
 #product-container {
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
+    overflow-y: scroll;
     margin-top: 28px;
     width: 372px;
-    height: 100vh - 321px;
+    height: 633px;
     margin-left: 28px;
+    /* border: solid 1px red; */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+#product-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }

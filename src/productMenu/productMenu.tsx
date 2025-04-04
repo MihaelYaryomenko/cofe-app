@@ -8,6 +8,10 @@ function productMenu() {
             <PMElement name={"Мокко"} />
             <PMElement name={"Топиако"} />
             <PMElement name={"Кофе"} />
+            <PMElement name={"Топиако"} />
+            <PMElement name={"Кофе"} />
+            <PMElement name={"Топиако"} />
+            <PMElement name={"Кофе"} />
         </div>
     )
 }
